@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Touch Grass AI | Find Your Outside</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="#">🌱 Touch Grass<span>AI</span></a>
+    <a class="nav-link" href="#challenge">Get outside ↗</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="pill">✦ YOUR LITTLE NUDGE TO NATURE</div>
+      <h1>Less scrolling.<br><span>More living.</span></h1>
+      <p class="subtitle">
+        A little fresh air can change your day.
+        Let AI find your next outdoor adventure.
+      </p>
+      <a class="primary-btn" href="#challenge">Find my adventure ↓</a>
+
+      <div class="nature-art" aria-label="Illustration of nature">
+        <div class="sun"></div>
+        <div class="hill hill-back"></div>
+        <div class="hill hill-front"></div>
+        <div class="flower flower-one">✿</div>
+        <div class="flower flower-two">✿</div>
+        <div class="flower flower-three">✿</div>
+        <div class="art-label">The world is waiting for you.</div>
+      </div>
+    </section>
+
+    <section class="challenge-section" id="challenge">
+      <div class="section-heading">
+        <span class="eyebrow">YOUR DAY, YOUR ADVENTURE</span>
+        <h2>What sounds good today?</h2>
+        <p>Tell us a little about yourself. Your AI adventure awaits.</p>
+      </div>
+
+      <div class="form-card">
+        <label for="mood">How are you feeling?</label>
+        <select id="mood">
+          <option value="bored">😐 A little bored</option>
+          <option value="stressed">😵 Stressed</option>
+          <option value="energetic">⚡ Full of energy</option>
+          <option value="curious">🔎 Curious</option>
+          <option value="peaceful">🌿 Looking for peace</option>
+        </select>
+
+        <label for="time">How much time do you have?</label>
+        <select id="time">
+          <option value="10">10 minutes</option>
+          <option value="20" selected>20 minutes</option>
+          <option value="30">30 minutes</option>
+          <option value="60">1 hour</option>
+        </select>
+
+        <label for="interest">Choose your favourite activity</label>
+        <select id="interest">
+          <option value="nature walk">🚶 Nature walk</option>
+          <option value="gardening">🪴 Gardening</option>
+          <option value="birdwatching">🐦 Birdwatching</option>
+          <option value="nature photography">📸 Nature photography</option>
+          <option value="outdoor games">⚽ Outdoor games</option>
+          <option value="nature exploration">🍃 Nature exploration</option>
+        </select>
+
+        <button id="generateBtn" class="primary-btn full-btn">
+          ✨ Generate my mission
+        </button>
+
+        <p class="privacy-note">🌱 AI-powered adventures, made just for you.</p>
+      </div>
+
+      <div id="result" class="result-card" hidden aria-live="polite">
+        <div class="result-top">
+          <span class="eyebrow">YOUR AI-GENERATED MISSION</span>
+          <span class="leaf-icon">🌿</span>
+        </div>
+        <h3 id="missionTitle">Your next adventure</h3>
+        <p id="missionText"></p>
+        <div class="mission-meta">
+          <span id="missionTime">⏱ 20 minutes</span>
+          <span>🌎 Real-world adventure</span>
+        </div>
+        <button id="completeBtn" class="primary-btn full-btn">
+          ✓ I completed my mission
+        </button>
+        <p id="completionMessage" class="completion-message" hidden>
+          Amazing! You made time for the world outside. +10 points 🌟
+        </p>
+      </div>
+
+      <div class="points-card">
+        <span>🏆</span>
+        <div>
+          <p>Total nature points</p>
+          <strong id="points">0</strong>
+        </div>
+        <span class="points-label">Every little step counts!</span>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with 🌱 for a world beyond the screen.</p>
+    <p>Touch Grass AI · Powered by open-source AI</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Touch Grass AI | Find Your Outside</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="#">🌱 Touch Grass<span>AI</span></a>
+    <a class="nav-link" href="#challenge">Get outside ↗</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="pill">✦ YOUR LITTLE NUDGE TO NATURE</div>
+      <h1>Less scrolling.<br><span>More living.</span></h1>
+      <p class="subtitle">
+        A little fresh air can change your day.
+        Let AI find your next outdoor adventure.
+      </p>
+      <a class="primary-btn" href="#challenge">Find my adventure ↓</a>
+
+      <div class="nature-art" aria-label="Illustration of nature">
+        <div class="sun"></div>
+        <div class="hill hill-back"></div>
+        <div class="hill hill-front"></div>
+        <div class="flower flower-one">✿</div>
+        <div class="flower flower-two">✿</div>
+        <div class="flower flower-three">✿</div>
+        <div class="art-label">The world is waiting for you.</div>
+      </div>
+    </section>
+
+    <section class="challenge-section" id="challenge">
+      <div class="section-heading">
+        <span class="eyebrow">YOUR DAY, YOUR ADVENTURE</span>
+        <h2>What sounds good today?</h2>
+        <p>Tell us a little about yourself. Your AI adventure awaits.</p>
+      </div>
+
+      <div class="form-card">
+        <label for="mood">How are you feeling?</label>
+        <select id="mood">
+          <option value="bored">😐 A little bored</option>
+          <option value="stressed">😵 Stressed</option>
+          <option value="energetic">⚡ Full of energy</option>
+          <option value="curious">🔎 Curious</option>
+          <option value="peaceful">🌿 Looking for peace</option>
+        </select>
+
+        <label for="time">How much time do you have?</label>
+        <select id="time">
+          <option value="10">10 minutes</option>
+          <option value="20" selected>20 minutes</option>
+          <option value="30">30 minutes</option>
+          <option value="60">1 hour</option>
+        </select>
+
+        <label for="interest">Choose your favourite activity</label>
+        <select id="interest">
+          <option value="nature walk">🚶 Nature walk</option>
+          <option value="gardening">🪴 Gardening</option>
+          <option value="birdwatching">🐦 Birdwatching</option>
+          <option value="nature photography">📸 Nature photography</option>
+          <option value="outdoor games">⚽ Outdoor games</option>
+          <option value="nature exploration">🍃 Nature exploration</option>
+        </select>
+
+        <button id="generateBtn" class="primary-btn full-btn">
+          ✨ Generate my mission
+        </button>
+
+        <p class="privacy-note">🌱 AI-powered adventures, made just for you.</p>
+      </div>
+
+      <div id="result" class="result-card" hidden aria-live="polite">
+        <div class="result-top">
+          <span class="eyebrow">YOUR AI-GENERATED MISSION</span>
+          <span class="leaf-icon">🌿</span>
+        </div>
+        <h3 id="missionTitle">Your next adventure</h3>
+        <p id="missionText"></p>
+        <div class="mission-meta">
+          <span id="missionTime">⏱ 20 minutes</span>
+          <span>🌎 Real-world adventure</span>
+        </div>
+        <button id="completeBtn" class="primary-btn full-btn">
+          ✓ I completed my mission
+        </button>
+        <p id="completionMessage" class="completion-message" hidden>
+          Amazing! You made time for the world outside. +10 points 🌟
+        </p>
+      </div>
+
+      <div class="points-card">
+        <span>🏆</span>
+        <div>
+          <p>Total nature points</p>
+          <strong id="points">0</strong>
+        </div>
+        <span class="points-label">Every little step counts!</span>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with 🌱 for a world beyond the screen.</p>
+    <p>Touch Grass AI · Powered by open-source AI</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
